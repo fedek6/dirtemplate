@@ -46,3 +46,15 @@ Multimedia template consists of directories:
 * videos
 
 As you can see this is pretty good boilerplate for any website or game project.
+
+## How to add custom template?
+
+Templates are simply `json` files:
+
+```json
+{
+  "directory-1": "# Markdown description",
+  "directory-2": "# Markdown description"
+}
+
+```
