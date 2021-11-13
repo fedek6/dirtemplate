@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const { program } = require("commander");
 
-const genTemplatePath = (template) => {
+const genTemplatePath = template => {
   const nameRegex = /^[a-z]+$/;
 
   if (nameRegex.test(template)) {
@@ -13,7 +13,12 @@ const genTemplatePath = (template) => {
   } else {
     throw new Error("Template file must have a json extension");
   }
-}
+};
+
+const createReadme = (content, dirPath) => {
+  const readmePath = path.join(dirPath, "README.md");
+  fs.writeFileSync(readmePath, content);
+};
 
 program
   .version("0.0.1")
@@ -24,7 +29,7 @@ program
     let jsonData;
 
     try {
-      const templatePath =  genTemplatePath(template);
+      const templatePath = genTemplatePath(template);
 
       // Read template
       if (fs.existsSync(templatePath)) {
@@ -45,6 +50,7 @@ program
         console.log(`Creating directory: ${newDir}`);
         const templateDir = path.join(dir, newDir);
         fs.mkdirSync(templateDir);
+        createReadme(jsonData[newDir], templateDir);
       }
 
       console.log("That's all!");
