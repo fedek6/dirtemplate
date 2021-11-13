@@ -16,7 +16,7 @@ dirtemplate [options] <dirname>
 ## Examples
 
 ```bash
-npx dirtemplate new-project --template multimedia
+npx @fedek6/dirtemplate new-project --template multimedia
 ```
 
 Will create a directory structure determined in a built-in template called `multimedia.json`. 
@@ -26,7 +26,7 @@ Will create a directory structure determined in a built-in template called `mult
 If you want, you can use your own custom template. Simply use the path instead of a template name. 
 
 ```bash
-npx dirtemplate new-project --template ./custom.json
+npx @fedek6/dirtemplate new-project --template ./custom.json
 ```
 
 ## Multimedia template
