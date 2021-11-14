@@ -1,6 +1,6 @@
 {
   "name": "@fedek6/dirtemplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "bin": "./index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fedek6/mutlimedia-template.git"
+    "url": "git+https://github.com/fedek6/dirtemplate.git"
   },
   "keywords": [],
   "author": "Konrad Fedorczyk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fedek6/mutlimedia-template/issues"
+    "url": "https://github.com/fedek6/dirtemplate./issues"
   },
-  "homepage": "https://github.com/fedek6/mutlimedia-template#readme",
+  "homepage": "https://github.com/fedek6/dirtemplate#readme",
   "dependencies": {
     "commander": "^8.3.0"
   }
