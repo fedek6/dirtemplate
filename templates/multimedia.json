@@ -9,5 +9,7 @@
   "snippets": "# Links to code snippets\nLinks & code snippets.",
   "textures": "# Textures\nTexture assets.",
   "vectors": "# Vector assets\nVector files.",
-  "videos": "# Video stocks\nVideo files."
+  "videos": "# Video stocks\nVideo files.",
+  "notes-and-content": "# Notes & content\nClient notes and content.",
+  "patterns": "# Patterns\nPatterns for graphic editors."
 }
