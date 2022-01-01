@@ -20,8 +20,11 @@ const createReadme = (content, dirPath) => {
   fs.writeFileSync(readmePath, content);
 };
 
+const package = fs.readFileSync(path.resolve(__dirname, "package.json"));
+const { version } = JSON.parse(package);
+
 program
-  .version("0.0.1")
+  .version(version)
   .argument("<dirname>", "directory name to crate structure")
   .option("-t, --template <template>", "which template to use", "multimedia")
   .action((dirname, { template }) => {

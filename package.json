@@ -1,6 +1,6 @@
 {
   "name": "@fedek6/dirtemplate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple tool for building reusable, standardized directory structures.",
   "main": "index.js",
   "bin": {
