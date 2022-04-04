@@ -4,7 +4,7 @@ const path = require("path");
 const { program } = require("commander");
 
 const genTemplatePath = template => {
-  const nameRegex = /^[a-z]+$/;
+  const nameRegex = /^[a-z\-]+$/;
 
   if (nameRegex.test(template)) {
     return path.resolve(__dirname, "templates", `${template}.json`);
