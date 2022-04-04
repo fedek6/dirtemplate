@@ -47,6 +47,16 @@ Multimedia template consists of directories:
 
 As you can see this is pretty good boilerplate for any website or game project.
 
+## Simple website template
+
+This is template for starting simple webistes:
+
+* content
+* docs
+* snippets
+* production
+* fonts
+
 ## How to add custom template?
 
 Templates are simply `json` files:
